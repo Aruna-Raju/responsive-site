@@ -1,0 +1,563 @@
+html{
+	font-family: 'Kreon', serif;
+}
+body{
+	position: relative;
+	overflow-x: hidden;
+	font-size: 16px;
+}
+::-moz-selection{
+	color: white;
+	background-color: #605D5C;
+}
+
+
+
+.subscribebtn{
+    background-color: black;
+    color: white;
+    border-color:#4DC8F4; 
+    height: 35px;
+  }
+#myModal{
+	z-index:999999;
+}
+.modal-dialog{
+  margin-top: 60px;
+  z-index:999999;
+ 
+}
+
+.modal-content{
+  background-color: #4DC8F4;
+  padding: 10px 20px 40px 20px;
+}
+
+.close {
+    color: #000000; 
+    opacity: 1;
+}
+
+.close:hover{
+  color: #000000; 
+  opacity: 1;
+}
+
+.newletter{
+  margin-top: 30px;
+  color: black;
+  font-size: 30px;
+}
+
+.subscribe{
+margin-top: 30px;
+color: black;
+font-size: 20px;
+}
+
+#search-form1{
+  margin-top: 30px;
+}
+
+.searchinput{
+border-color: black;
+width: 50%;
+height: 30px;
+}
+
+
+.firstrow{
+	padding: 10px;
+	box-shadow: 0px 15px 10px -15px #111;
+}
+
+.firstrow .menu{
+  margin: 0;
+  padding-top: 10px;
+  list-style: none;
+  background-color: white;
+  z-index: 1;
+}
+
+.firstrow .menu li{
+  z-index: 2;
+}
+
+.firstrow .menu li a {
+  color:#4DC8F4;
+  font-size: 20px;
+  display: block;
+  padding: 10px 20px;
+  z-index: 5;
+  position: relative;
+  text-decoration: none;
+  transition:color .4s;
+  font-variant: small-caps;
+
+}
+.firstrow .menu .active a{
+	color: #064860;
+}
+.firstrow .menu li a:focus{
+	background-color: #e7f7fd;
+}
+.firstrow .menu li a:hover{
+   color:#eee;
+   background-color: #e7f7fd;
+   border-radius: 10%;
+}
+.firstrow .menu li a::after {
+  color:#eee;
+  content: "";
+  position: absolute;
+  top: 50%;
+  display: block;
+  left: 0;
+  width: 100%;
+  height: 0%;
+  z-index: -1;
+  transition: all .5s;
+}
+
+.firstrow .menu li a:hover::after {
+  height: 100%;
+  top: 0;
+  background-color: #4DC8F4;
+  z-index: -1;
+  border-radius: 10%;
+}
+
+.firstrow .butn{
+	border-color: #4DC8F4;
+	margin-top: 0px;
+}
+.firstrow .butn:hover{
+	background-color: #4DC8F4;
+	border-color: #FFFFFF;
+}
+.firstrow .icon-bar{
+	background-color: #605D5C;
+}
+
+
+.affix{
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 9999;
+	background-color: white;
+}
+
+
+.secondrow{
+	padding: 0px;
+	margin-top: -16px;
+}
+
+.transition-timer-carousel .carousel-caption {
+    background: -moz-linear-gradient(top,  rgba(0,0,0,0) 0%, rgba(0,0,0,0.1) 4%, rgba(0,0,0,0.5) 32%, rgba(0,0,0,1) 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0)), color-stop(4%,rgba(0,0,0,0.1)), color-stop(32%,rgba(0,0,0,0.5)), color-stop(100%,rgba(0,0,0,1))); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.1) 4%,rgba(0,0,0,0.5) 32%,rgba(0,0,0,1) 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.1) 4%,rgba(0,0,0,0.5) 32%,rgba(0,0,0,1) 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.1) 4%,rgba(0,0,0,0.5) 32%,rgba(0,0,0,1) 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.1) 4%,rgba(0,0,0,0.5) 32%,rgba(0,0,0,1) 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#000000',GradientType=0 ); /* IE6-9 */
+    width: 100%;
+	left: 0px;
+	right: 0px;
+	bottom: 0px;
+	text-align: center;
+	padding-top: 5px;
+	padding-left: 15%;
+	padding-right: 15%;
+}
+.transition-timer-carousel .carousel-caption .carousel-caption-header {
+	margin-top: 10px;
+	font-size: 24px;
+	font-variant: small-caps;
+}
+
+	
+.transition-timer-carousel .carousel-indicators {
+	bottom: 0px;
+	margin-bottom: 5px;
+}
+.transition-timer-carousel .carousel-control {
+	z-index: 11;
+}
+.transition-timer-carousel .transition-timer-carousel-progress-bar {
+    height: 5px;
+    background-color: #4DC8F4;
+    width: 0%;
+    margin: -5px 0px 0px 0px;
+    border: none;
+    z-index: 9999;
+    position: relative;
+}
+.transition-timer-carousel .transition-timer-carousel-progress-bar.animate{
+    /* We make the transition time shorter to avoid the slide transitioning
+    before the timer bar is "full" - change the 4.25s here to fit your
+    carousel's transition time */
+    -webkit-transition: width 4.35s linear;
+	-moz-transition: width 4.35s linear;
+	-o-transition: width 4.35s linear;
+	transition: width 4.35s linear;
+}
+
+#about .head h3{
+	font: 30px;
+	text-align: center;
+	font-variant: small-caps;
+	margin-top: 30px;
+	
+}
+#about .line{
+	position: relative;
+	z-index:1;
+}
+#about .line:before{
+	border-top: 2px solid black;
+	content:"";
+	margin: 0 auto;
+	position: absolute;
+	top: 50%;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	width: 90%;
+	z-index: -1;
+}
+#about .background{
+	background-color: #4DC8F4;
+	padding: 0px 15px;
+	color: #FFFFFF;
+}
+
+.thirdrow{
+	margin-top: 40px;
+	padding: 20px;
+}
+.thirdrow .abtcontent{
+	padding: 20px;
+	text-indent:40px
+}
+
+#service .head h3{
+	font: 30px;
+	text-align: center;
+	font-variant: small-caps;
+	margin-top: 30px;
+}
+#service .line{
+	position: relative;
+	z-index:1;
+}
+#service .line:before{
+	border-top: 2px solid black;
+	content:"";
+	margin: 0 auto;
+	position: absolute;
+	top: 50%;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	width: 90%;
+	z-index: -1;
+}
+#service .background{
+	background-color: #FFFFFF;
+	padding: 0px 15px;
+	color: #4DC8F4;
+}
+.fourthrow{
+	margin-top: 40px;
+}
+.fourthrow .row1, .fourthrow .row2, .fourthrow .row3, .fourthrow .row4, .fourthrow .row5{
+	
+	margin: 0px 0px 3px 0px;
+	padding: 10px;
+}
+.fourthrow .row1, .fourthrow .row2, .fourthrow .row3, .fourthrow .row4{
+	border-bottom: 1px solid #605D5C;
+}
+.fourthrow .content{
+	padding: 20px;
+}
+.fourthrow .content h3{
+	text-align: center;
+	font-variant: small-caps;
+}
+.fourthrow .content p{
+	padding-top: 20px;
+}
+#work .head h3{
+	font: 30px;
+	text-align: center;
+	font-variant: small-caps;
+	margin-top: 30px;
+}
+#work .line{
+	position: relative;
+	z-index:1;
+}
+#work .line:before{
+	border-top: 2px solid black;
+	content:"";
+	margin: 0 auto;
+	position: absolute;
+	top: 50%;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	width: 90%;
+	z-index: -1;
+}
+#work .background{
+	background-color: #4DC8F4;
+	padding: 0px 15px;
+	color: #FFFFFF;
+}
+
+.quote{
+	color: #4DC8F4;
+	text-align: center;
+	margin-bottom: 15px;
+}
+.fifthrow{
+	margin-top: 50px;
+}
+
+.fifthrow .carousel{
+	padding-bottom: 20px;
+}
+.fifthrow .carousel-indicators li{
+	background-color: #4DC8F4;
+}
+.fifthrow .carousel .carousel-inner .item{
+	padding-bottom: 30px;
+}
+.fifthrow .carousel .carousel-inner .item h3{
+	font-variant: small-caps;
+}
+.fifthrow .icon-style{
+	font-size: 25px;
+	color: #4DC8F4;
+	background-color: black;
+	border-radius: 50%;
+	padding: 0px 1px 3px 1px;
+	height: auto;
+	z-index: 999;
+	
+}
+.fifthrow .carousel .carousel-indicators .active{
+	padding: 6px;
+}
+
+#whyus .head h3{
+	font: 30px;
+	text-align: center;
+	font-variant: small-caps;
+	margin-top: 30px;
+}
+#whyus .line{
+	position: relative;
+	z-index:1;
+}
+#whyus .line:before{
+	border-top: 2px solid black;
+	content:"";
+	margin: 0 auto;
+	position: absolute;
+	top: 50%;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	width: 90%;
+	z-index: -1;
+}
+#whyus .background{
+	background-color: #FFFFFF;
+	padding: 0px 15px;
+	color: #4DC8F4;
+}
+
+.sixthrow{
+	margin-top: 30px;
+}
+.sixthrow .box1{
+	padding: 40px;
+}
+.sixthrow .box2{
+	background-color:#0c90c0;
+	padding: 20px;
+	border-radius: 5%;
+	box-shadow: black 5px 5px 5px 5px;
+}
+.sixthrow .content1 p{
+	color: white;
+}
+.sixthrow .content1 h3{
+	color: black;
+}
+.sixthrow .box2:hover{
+    background-color: white;
+}
+.sixthrow .box2:hover h3{
+    color:#4DC8F4;
+}
+.sixthrow .box2:hover p{
+    	color: black;
+}
+.sixthrow .icon1 .fa{
+   color: white;
+   border-radius: 50%;
+   background-color: black;
+   padding: 10px;
+}
+
+#contact .head h3{
+	font: 30px;
+	text-align: center;
+	font-variant: small-caps;
+	margin-top: 30px;
+}
+#contact .line{
+	position: relative;
+	z-index:1;
+}
+#contact .line:before{
+	border-top: 2px solid black;
+	content:"";
+	margin: 0 auto;
+	position: absolute;
+	top: 50%;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	width: 90%;
+	z-index: -1;
+}
+#contact .background{
+	background-color: #4DC8F4;
+	padding: 0px 15px;
+	color: #FFFFFF;
+}
+
+.cntsubscribe{
+	border-bottom: 1px solid #cccccc;
+	padding-bottom: 10px;
+}
+.subcriberow{
+	margin-top: 40px;
+	
+	background-color: #4DC8F4;
+	padding: 15px;
+	width: 80%;
+	border-radius: 10px 10px 10px 10px;
+}
+.subcriberow span{
+	font-size: 20px;
+}
+	
+.subbutton{
+	background-color: black;
+    color: white;
+    border-color:#4DC8F4; 
+    margin-top: 10px;
+}
+.subinput{
+	margin-top: 10px;
+}
+.foot{
+	background-color: #FFFFFF;
+	padding-bottom: 20px;
+	margin-top: 30px;
+	
+}
+.foot .submit{
+	width: 100px;
+}
+
+.foot .follow{
+	text-align: center;
+	padding: 10px;
+	
+}
+.foot .follow h3{
+	font-variant: small-caps;
+	color: #4DC8F4;
+	text-decoration: underline;
+	font-weight: bold;
+	font-size: 26px;
+}
+.foot .follow i{
+	padding: 4px;
+	color: #000000;
+}
+.foot .follow a{
+	text-decoration: none;
+}
+.foot .cname{
+	font-variant: small-caps;
+	text-decoration: underline;
+	font-weight: bold;
+	font-size: 26px;
+	color: #4DC8F4;
+}
+.foot .address, .foot .contact{
+	padding: 20px;
+}
+.lastrow{
+	background-color: #4DC8F4;
+	padding: 20px;
+}
+
+
+
+
+.scroll-top-wrapper {
+    position: fixed;
+    opacity: 0;
+    visibility: hidden;
+	overflow: hidden;
+	text-align: center;
+	z-index: 99999999;
+    background-color: #777777;
+	color: #4DC8F4;
+	width: 50px;
+	height: 48px;
+	line-height: 48px;
+	right: 30px;
+	bottom: 30px;
+	
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	border-bottom-right-radius: 10px;
+	border-bottom-left-radius: 10px;
+	-webkit-transition: all 0.5s ease-in-out;
+	-moz-transition: all 0.5s ease-in-out;
+	-ms-transition: all 0.5s ease-in-out;
+	-o-transition: all 0.5s ease-in-out;
+	transition: all 0.5s ease-in-out;
+}
+.scroll-top-wrapper:hover {
+	background-color: #888888;
+}
+.scroll-top-wrapper.show {
+    visibility:visible;
+    cursor:pointer;
+	opacity: 1.0;
+}
+.scroll-top-wrapper i.fa {
+	line-height: inherit;
+}
+
+
+
+span.anchor {
+    margin-top: -150px; /* height of nav, in this case 54px */
+    display: block;
+    height: 150px; /* height of nav, in this case 54px */
+    visibility: hidden;
+    position: relative;
+}
